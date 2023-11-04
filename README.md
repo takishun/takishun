@@ -1,10 +1,4 @@
 - 👋 Hi, I’m @takishun
-- I open the MLeague stats cite.
-- M League is Professional Madjan League opened japan.
-- It has launched the League since 2018.
-- I create MLeague stats cite because I'd like to know you to MLeague.
-- Please visit this cite https://m-league-stats.streamlit.app/
-- Thank you
 
 - Another info
 - 👀 I’m interested in game programming, data science, AI and so on
