@@ -8,7 +8,7 @@ from pathlib import Path
 
 import streamlit as st
 
-import content
+import site_content as content
 
 BASE_DIR = Path(__file__).parent
 
