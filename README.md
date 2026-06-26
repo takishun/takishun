@@ -24,13 +24,13 @@ A modern, single-page portfolio built with [Streamlit](https://streamlit.io/).
 - 📒 note QR code in the hero linking to my articles
 - 🧭 Sidebar navigation (Home · About · Skills · Projects · Journey · Contact)
 - 🧩 Skill toolbox, featured projects and a journey timeline
-- ✏️ Content-driven — edit everything in `content.py`, no markup needed
+- ✏️ Content-driven — edit everything in `site_content.py`, no markup needed
 
 ### Project structure
 ```
 .
 ├── app.py              # Main Streamlit app
-├── content.py          # Bilingual content (EN/JA): profile, skills, projects…
+├── site_content.py     # Bilingual content (EN/JA): profile, skills, projects…
 ├── requirements.txt    # Python dependencies
 ├── assets/
 │   └── note_qr.png     # QR code linking to my note articles
@@ -48,7 +48,7 @@ streamlit run app.py
 Then open http://localhost:8501.
 
 ### Customize
-Open `content.py` and edit the `CONTENT["en"]` / `CONTENT["ja"]` dictionaries
+Open `site_content.py` and edit the `CONTENT["en"]` / `CONTENT["ja"]` dictionaries
 (profile, skills, projects, timeline, contacts and UI labels). The layout and
 both languages update automatically.
 
