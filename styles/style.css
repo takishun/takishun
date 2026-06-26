@@ -1,0 +1,240 @@
+/* ============================================================
+   Modern Portfolio Theme
+   ============================================================ */
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --accent: #6C5CE7;
+    --accent-2: #00D2FF;
+    --accent-grad: linear-gradient(135deg, #6C5CE7 0%, #00D2FF 100%);
+    --bg: #0E1117;
+    --card: rgba(255, 255, 255, 0.04);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --text: #E6E6EB;
+    --muted: #9aa0ad;
+}
+
+/* ---- Base ---- */
+html, body, [class*="css"] {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(108, 92, 231, 0.18), transparent 60%),
+        radial-gradient(1000px 500px at 100% 0%, rgba(0, 210, 255, 0.12), transparent 55%),
+        var(--bg);
+}
+
+/* Hide Streamlit chrome */
+#MainMenu, footer, header [data-testid="stToolbar"] { visibility: hidden; }
+
+/* Tighter top padding */
+.block-container { padding-top: 2.5rem; max-width: 1100px; }
+
+h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; letter-spacing: -0.02em; }
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem 0 0.5rem;
+}
+.hero-eyebrow {
+    display: inline-block;
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    padding: 0.35rem 0.85rem;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    background: var(--card);
+}
+.hero-title {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0.4rem 0 0;
+}
+.hero-title .grad {
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-sub {
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    color: var(--muted);
+    max-width: 640px;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   Section headings
+   ============================================================ */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.2rem 0 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.section-title::before {
+    content: "";
+    width: 26px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--accent-grad);
+}
+
+/* ============================================================
+   Cards
+   ============================================================ */
+.card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    padding: 1.4rem 1.5rem;
+    backdrop-filter: blur(12px);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+}
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(108, 92, 231, 0.5);
+    box-shadow: 0 18px 40px -20px rgba(108, 92, 231, 0.6);
+}
+.card h3 { margin: 0 0 0.35rem; font-size: 1.15rem; }
+.card p { color: var(--muted); font-size: 0.95rem; line-height: 1.55; margin: 0; }
+
+.project-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent-2);
+    background: rgba(0, 210, 255, 0.1);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin: 0.1rem 0.25rem 0 0;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-2);
+    text-decoration: none;
+}
+.card-link:hover { text-decoration: underline; }
+
+/* ============================================================
+   Skills / pills
+   ============================================================ */
+.pill {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    margin: 0.25rem 0.3rem 0.25rem 0;
+    transition: all 0.2s ease;
+}
+.pill:hover { border-color: var(--accent); color: #fff; transform: translateY(-2px); }
+
+/* ============================================================
+   Timeline
+   ============================================================ */
+.timeline-item {
+    position: relative;
+    padding: 0 0 1.4rem 1.6rem;
+    border-left: 2px solid var(--card-border);
+}
+.timeline-item:last-child { border-left: 2px solid transparent; }
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-grad);
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.18);
+}
+.timeline-when { font-size: 0.78rem; color: var(--accent-2); font-weight: 600; letter-spacing: 0.04em; }
+.timeline-title { font-size: 1.05rem; font-weight: 600; margin: 0.15rem 0; }
+.timeline-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+
+/* ============================================================
+   Stats
+   ============================================================ */
+.stat {
+    text-align: center;
+    padding: 1.1rem 0.5rem;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+}
+.stat-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.stat-label { font-size: 0.82rem; color: var(--muted); margin-top: 0.2rem; }
+
+/* ============================================================
+   Contact buttons
+   ============================================================ */
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    padding: 0.85rem 1.1rem;
+    border-radius: 14px;
+    transition: all 0.2s ease;
+}
+.contact-btn:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -18px rgba(108, 92, 231, 0.7);
+}
+
+/* Divider */
+.spacer-sm { height: 1.2rem; }
+.spacer-md { height: 2.4rem; }
+
+.footer-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.82rem;
+    padding: 2rem 0 1rem;
+}
+
+/* Sidebar tweaks */
+[data-testid="stSidebar"] {
+    background: rgba(14, 17, 23, 0.6);
+    border-right: 1px solid var(--card-border);
+}
