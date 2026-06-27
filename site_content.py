@@ -111,7 +111,7 @@ CONTENT = {
         ],
         "services": [
             {
-                "icon": "📈",
+                "icon": "📊",
                 "title": "Data Analysis & Visualization",
                 "desc": (
                     "Turning raw data into clear, actionable insights with pandas, "
@@ -236,7 +236,7 @@ CONTENT = {
         ],
         "services": [
             {
-                "icon": "📈",
+                "icon": "📊",
                 "title": "データ分析・可視化",
                 "desc": (
                     "生のデータを pandas や scikit-learn、わかりやすい可視化で"

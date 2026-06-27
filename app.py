@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).parent
 # --------------------------------------------------------------------------
 st.set_page_config(
     page_title="Takishun · Portfolio",
-    page_icon="🚀",
+    page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded",
 )
