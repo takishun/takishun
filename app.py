@@ -88,7 +88,7 @@ with st.sidebar:
         - [{nav['about']}](#about)
         - [{nav['skills']}](#skills)
         - [{nav['projects']}](#projects)
-        - [{nav['journey']}](#journey)
+        - [{nav['services']}](#services)
         - [{nav['contact']}](#contact)
         """
     )
@@ -189,22 +189,23 @@ for col, proj in zip(proj_cols, C["projects"]):
 spacer("md")
 
 # --------------------------------------------------------------------------
-# Journey / Timeline
+# Services / What I Can Help With
 # --------------------------------------------------------------------------
-st.markdown('<a name="journey"></a>', unsafe_allow_html=True)
-section_title(ui["journey_title"])
+st.markdown('<a name="services"></a>', unsafe_allow_html=True)
+section_title(ui["services_title"])
 spacer("sm")
 
-timeline_html = ""
-for item in C["timeline"]:
-    timeline_html += f"""
-    <div class="timeline-item">
-        <div class="timeline-when">{item['when']}</div>
-        <div class="timeline-title">{item['title']}</div>
-        <div class="timeline-desc">{item['desc']}</div>
-    </div>
-    """
-st.markdown(timeline_html, unsafe_allow_html=True)
+service_cols = st.columns(2)
+for idx, svc in enumerate(C["services"]):
+    service_cols[idx % 2].markdown(
+        f"""
+        <div class="card" style="margin-bottom: 1rem;">
+            <h3>{svc['icon']} {svc['title']}</h3>
+            <p>{svc['desc']}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 spacer("md")
 

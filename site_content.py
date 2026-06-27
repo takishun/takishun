@@ -36,7 +36,7 @@ CONTENT = {
                 "about": "About",
                 "skills": "Skills",
                 "projects": "Projects",
-                "journey": "Journey",
+                "services": "Services",
                 "contact": "Contact",
             },
             "view_github": "View GitHub",
@@ -44,7 +44,7 @@ CONTENT = {
             "about_title": "About",
             "skills_title": "Skills & Toolbox",
             "projects_title": "Featured Projects",
-            "journey_title": "My Journey",
+            "services_title": "What I Can Help With",
             "contact_title": "Get in Touch",
             "contact_intro": (
                 "Open to collaboration, project ideas and a good conversation "
@@ -109,26 +109,38 @@ CONTENT = {
                 "url": APP_REVERSI,
             },
         ],
-        "timeline": [
+        "services": [
             {
-                "when": "Now",
-                "title": "Learning Cyber Security",
-                "desc": "Studying security fundamentals, CTF-style challenges and defensive techniques.",
+                "icon": "📈",
+                "title": "Data Analysis & Visualization",
+                "desc": (
+                    "Turning raw data into clear, actionable insights with pandas, "
+                    "scikit-learn and intuitive visualizations to support better decisions."
+                ),
             },
             {
-                "when": "Ongoing",
-                "title": "Building & Shipping Web Apps",
-                "desc": "Developing and deploying interactive Streamlit apps across data, sports and games.",
+                "icon": "🛠️",
+                "title": "Interactive Web Apps",
+                "desc": (
+                    "Designing and shipping focused Streamlit apps that make a concept "
+                    "tangible and usable — quickly, from idea to live deployment."
+                ),
             },
             {
-                "when": "Foundation",
-                "title": "Data Science & AI",
-                "desc": "Hands-on work with Python data tooling, machine learning and applied analytics.",
+                "icon": "🎮",
+                "title": "Game & Educational Content",
+                "desc": (
+                    "Building game logic and interactive learning experiences that make "
+                    "complex ideas approachable and fun to explore."
+                ),
             },
             {
-                "when": "Origins",
-                "title": "Game Programming",
-                "desc": "Where the passion started — building game logic and interactive experiences.",
+                "icon": "🔐",
+                "title": "Security-aware Development",
+                "desc": (
+                    "Applying security fundamentals and a defensive mindset to build "
+                    "tools that are mindful of safety and robustness."
+                ),
             },
         ],
         "contacts": [
@@ -150,7 +162,7 @@ CONTENT = {
                 "about": "自己紹介",
                 "skills": "スキル",
                 "projects": "プロジェクト",
-                "journey": "歩み",
+                "services": "できること",
                 "contact": "お問い合わせ",
             },
             "view_github": "GitHub を見る",
@@ -158,7 +170,7 @@ CONTENT = {
             "about_title": "自己紹介",
             "skills_title": "スキル & ツール",
             "projects_title": "主なプロジェクト",
-            "journey_title": "これまでの歩み",
+            "services_title": "提供できること",
             "contact_title": "お問い合わせ",
             "contact_intro": (
                 "コラボレーションやプロジェクトのご相談、データ・ゲーム・セキュリティ"
@@ -222,26 +234,38 @@ CONTENT = {
                 "url": APP_REVERSI,
             },
         ],
-        "timeline": [
+        "services": [
             {
-                "when": "現在",
-                "title": "サイバーセキュリティを学習中",
-                "desc": "セキュリティの基礎、CTF 形式の課題、防御技術を学んでいます。",
+                "icon": "📈",
+                "title": "データ分析・可視化",
+                "desc": (
+                    "生のデータを pandas や scikit-learn、わかりやすい可視化で"
+                    "「意思決定に使えるインサイト」へと変換します。"
+                ),
             },
             {
-                "when": "継続中",
-                "title": "Web アプリの開発と公開",
-                "desc": "データ・スポーツ・ゲーム分野のインタラクティブな Streamlit アプリを開発・デプロイ。",
+                "icon": "🛠️",
+                "title": "インタラクティブな Web アプリ開発",
+                "desc": (
+                    "コンセプトを素早く形にする、焦点の定まった Streamlit アプリを"
+                    "アイデアから公開まで一貫して設計・実装します。"
+                ),
             },
             {
-                "when": "基盤",
-                "title": "データサイエンス & AI",
-                "desc": "Python のデータツール、機械学習、実践的な分析にハンズオンで取り組み。",
+                "icon": "🎮",
+                "title": "ゲーム・教育コンテンツ",
+                "desc": (
+                    "ゲームロジックやインタラクティブな学習体験を通じて、"
+                    "難しい概念を親しみやすく・楽しく学べる形にします。"
+                ),
             },
             {
-                "when": "原点",
-                "title": "ゲームプログラミング",
-                "desc": "情熱の出発点。ゲームロジックやインタラクティブな体験づくり。",
+                "icon": "🔐",
+                "title": "セキュリティを意識した開発",
+                "desc": (
+                    "セキュリティの基礎と防御的な視点を取り入れ、"
+                    "安全性と堅牢性に配慮したツールづくりを心がけています。"
+                ),
             },
         ],
         "contacts": [

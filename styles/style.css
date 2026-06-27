@@ -156,30 +156,6 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; letter-spacing: 
 .pill:hover { border-color: var(--accent); color: #fff; transform: translateY(-2px); }
 
 /* ============================================================
-   Timeline
-   ============================================================ */
-.timeline-item {
-    position: relative;
-    padding: 0 0 1.4rem 1.6rem;
-    border-left: 2px solid var(--card-border);
-}
-.timeline-item:last-child { border-left: 2px solid transparent; }
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--accent-grad);
-    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.18);
-}
-.timeline-when { font-size: 0.78rem; color: var(--accent-2); font-weight: 600; letter-spacing: 0.04em; }
-.timeline-title { font-size: 1.05rem; font-weight: 600; margin: 0.15rem 0; }
-.timeline-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
-
-/* ============================================================
    Stats
    ============================================================ */
 .stat {
