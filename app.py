@@ -110,7 +110,7 @@ with hero_col:
         f"""
         <div class="hero">
             <span class="hero-eyebrow">{profile['handle']}</span>
-            <div class="hero-title">Hi, I'm <span class="grad">{profile['name']}</span></div>
+            <div class="hero-title">DATA <span class="grad">FACTORY</span></div>
             <div class="hero-sub">{profile['tagline']}</div>
         </div>
         """,
