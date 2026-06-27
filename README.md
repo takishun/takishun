@@ -22,8 +22,8 @@ A modern, single-page portfolio built with [Streamlit](https://streamlit.io/).
 - 🌐 Bilingual — Japanese / English with a language toggle in the sidebar
 - 🎨 Modern dark UI with gradient hero, glassmorphism cards & hover effects
 - 📒 note QR code in the hero linking to my articles
-- 🧭 Sidebar navigation (Home · About · Skills · Projects · Journey · Contact)
-- 🧩 Skill toolbox, featured projects and a journey timeline
+- 🧭 Sidebar navigation (Home · About · Skills · Projects · Services · Contact)
+- 🧩 Skill toolbox, featured projects and a "what I can help with" section
 - ✏️ Content-driven — edit everything in `site_content.py`, no markup needed
 
 ### Project structure
@@ -49,7 +49,7 @@ Then open http://localhost:8501.
 
 ### Customize
 Open `site_content.py` and edit the `CONTENT["en"]` / `CONTENT["ja"]` dictionaries
-(profile, skills, projects, timeline, contacts and UI labels). The layout and
+(profile, skills, projects, services, contacts and UI labels). The layout and
 both languages update automatically.
 
 <!---
