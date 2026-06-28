@@ -100,7 +100,7 @@ CONTENT = {
                 "url": APP_BASEBALL,
             },
             {
-                "title": "Reversi Education",
+                "title": "Othello Town",
                 "desc": (
                     "An interactive Reversi (Othello) app designed to teach "
                     "strategy and game logic in an approachable way."
@@ -213,7 +213,7 @@ CONTENT = {
                 "url": APP_BASEBALL,
             },
             {
-                "title": "Reversi Education",
+                "title": "オセロタウン",
                 "desc": (
                     "リバーシ（オセロ）の戦略とゲームロジックを、"
                     "わかりやすく学べるインタラクティブなアプリです。"
